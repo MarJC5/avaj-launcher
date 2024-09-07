@@ -9,13 +9,13 @@ public class Tower {
     public void register(Flyable p_flyable) {
         if (!observers.contains(p_flyable)) {
             observers.add(p_flyable);
-            System.out.println("Tower says: " + p_flyable.getClass().getSimpleName() + "#" + p_flyable.getId() + " registered to weather tower.");
+            // implement a way to print the message that the flyable has registered to the tower
         }
     }
 
     public void unregister(Flyable p_flyable) {
         observers.remove(p_flyable);
-        System.out.println("Tower says: " + p_flyable.getClass().getSimpleName() + "#" + p_flyable.getId() + " unregistered from weather tower.");
+        // implement a way to print the message that the flyable has registered to the tower
     }
 
     protected void conditionsChanged() {
